@@ -2,6 +2,11 @@
 # Architecture
 ![alt text](https://raw.githubusercontent.com/serush46/ECSwithCFN/master/arch.png)
 
-Once you get an idea, You can provision the ECS Cluster with cloudformation using the files provided above. 
+Create a Codepipeline with                  
+**Source** stage as: Github/Codecommit (refer: sample.war)                
+**Build** stage as: Codebuild (refer: buildspec.yml, Dockerfile)                    
+**Deploy** stage as: Cloudformation (ECS) (refer: ecs.json)                   
 
-Note: You should have basic understanding on ECS and intermediate knowledge on cloudformation to understand this template (ecs.json).
+
+
+Note: You should have basic understanding on Codepipeline, ECS and intermediate knowledge on Cloudformation to understand this template.
